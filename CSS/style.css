@@ -1,0 +1,9 @@
+body
+{
+    font-family: 'Releway', Arial, Helvetica, sans-serif;
+}
+
+.populaires , .hebergements , footer
+{
+    background-color: #f2f2f2;
+}
