@@ -3,7 +3,77 @@ body
     font-family: 'Releway', Arial, Helvetica, sans-serif;
 }
 
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
 .populaires , .hebergements , footer
 {
     background-color: #f2f2f2;
+}
+
+h1, h2, h3 
+{
+    font-weight: bold;
+}
+
+nav ul, ol 
+{
+    list-style-type: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.logo
+{
+    float: left;
+    position: relative ;
+}
+
+nav ul
+{
+    display: flex;
+    justify-content: right;   
+}
+
+header
+{
+    display: flex;
+    justify-content: stretch;
+}
+
+.inscription
+{
+    font-weight: bold;
+    color: #0065fc;
+}
+
+header a:hover
+{
+    color: #0065fc;
+    text-decoration: overline;
+}
+
+header nav li
+{
+    margin-right: 75px;
+}
+
+header
+{
+    display: flex;
+    justify-content: stretch;
+
+
+}
+
+.top
+{
+    clear: left;
 }
