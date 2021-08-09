@@ -5,7 +5,7 @@ body
 
 #bloc_page
 {
-    width: 900px;
+    max-width: 1420px;
     margin: auto;
 }
 
@@ -32,14 +32,15 @@ a
 
 .logo
 {
-    float: left;
     position: relative ;
+    max-width: 25%;
+    height: auto;
 }
 
 nav ul
 {
     display: flex;
-    justify-content: right;   
+     
 }
 
 header
@@ -62,27 +63,23 @@ header a:hover
 
 header nav li
 {
-    margin-right: 75px;
+    margin-left: 75px;
 }
 
-header
-{
-    display: flex;
-    justify-content: stretch;
-
-
-}
-
-.top
-{
-    clear: left;
-}
 
 .recherche i
 {
     background-color: #f2f2f2;
     border-radius: 10px;
-    border: 15px solid #f2f2f2;
+    padding: 1px;
+    padding-left: 10px;
+}
+
+input
+{
+    border: none;
+    padding: 16px;
+    font-weight: bold;
 }
 
 .recherche button
@@ -90,7 +87,8 @@ header
     color: white;
     background-color: #0065fc;
     border-radius: 10px;
-    border: 15px solid #0065fc;
+    padding: 16px;
+    border: none;
 }
 
 .filtres i
@@ -98,18 +96,18 @@ header
     color: #0065fc;
     background-color: #deebff;
     border-radius: 30px;
-    border: 15px solid #deebff;
-    margin-left: 25px;
+    padding:10px;
 }
 
 .filtres button
 {
     font-weight: bold;
     background-color: white;
-    border-radius: 15px;
-    padding: 15px;
+    border-radius: 20px;
     border-color: #f2f2f2;
     margin-right: 15px;
+    padding: 0px;
+    padding-right: 10px;
 }
 
 .filtres
@@ -135,11 +133,15 @@ section
 {
     background-color: white;
     border-radius: 15px;
-    padding: 5px 5px 5px 5px;
-    height: 20%;
 }
 
-.populaire figure
+
+
+
+
+
+footer
 {
-    float: left;
+    display: flex;
+    justify-content: space-between;
 }
