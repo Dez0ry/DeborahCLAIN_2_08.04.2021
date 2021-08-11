@@ -31,16 +31,17 @@
         <section class="top">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-        <div class="recherche">        
-            <form action="search">
-                <p>
-                    <i class="fas fa-map-marker-alt">
-                    <input type="search" value="Marseille, France"/>
-                    <button type="submit" value="Rechercher"> Rechercher </button>
-                    </i> 
-                </p>
+              
+            <form action="search" class="recherche">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <input type="search" value="Marseille, France"/>    
+                    <button type="submit" value="Rechercher">
+                    Rechercher 
+                    </button>
+                    <i class="fas fa-search"></i>   
+                   
             </form>
-        </div>
+       
         <div class="filtres">    
         <h3>Filtres</h3>
                 <p>    
@@ -72,15 +73,17 @@
         </section>
 
         <section class="populaires">
-            <h2>Les plus populaires
-            <i class="fas fa-chart-line"></i>
-            </h2>
+            <h2>Les plus populaires</h2>
+                <i class="fas fa-chart-line" id="chart-line"></i>
                     <div class="carte_populaires">
                     <a href="#">
                     <figure>
                         <img src="images/hebergements/Les_plus_populaires_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Chambre de l'hôtel Le soleil du matin">
-                        <figcaption>Hôtel Le soleil du matin <br>
-                            Nuit à partir de 128€
+                        <figcaption>
+                            <div class="nom_hotel">
+                                Hôtel Le soleil du matin
+                            </div>
+                                Nuit à partir de 128€
                     <div class="rating">
                         <div class="stars">
                             <i class="fa fa-star"></i>
@@ -90,8 +93,8 @@
                             <i class="fa fa-star"></i>
                         </div>
                     </div>
-                        </figcaption>       
-                    </figure>
+                        </figcaption>
+                    </figure>       
                     </a>    
                     </div>
 
@@ -99,8 +102,11 @@
                     <a href="#">
                     <figure>
                         <img src="images/hebergements/Les_plus_populaires_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Chambre d'Au coeur de l'eau Chambres d'hôtes">
-                        <figcaption>Au coeur de l'eau Chambres d'hôtes <br>
-                        Nuit à partir de 71€
+                        <figcaption>
+                            <div class="nom_hotel">
+                            Au coeur de l'eau Chambres d'hôtes
+                            </div>
+                            Nuit à partir de 71€
                     <div class="rating">
                         <div class="stars">
                             <i class="fa fa-star"></i>
@@ -119,8 +125,11 @@
                     <a href="#">
                     <figure>
                         <img src="images/hebergements/Les_plus_populaires_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Chambre de l'hôtel Tout bleu et Blanc">
-                        <figcaption>Hôtel Tout bleu et Blanc
-                        Nuit à partir de 68€
+                        <figcaption>
+                            <div class="nom_hotel">
+                            Hôtel Tout bleu et Blanc
+                            </div>
+                            Nuit à partir de 68€
                     <div class="rating">
                         <div class="stars">
                             <i class="fa fa-star"></i>
@@ -143,8 +152,11 @@
                 <a href="#">
                 <figure>
                     <img src="images/hebergements/Hebergements_Marseille_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Chambre de l'Auberge la Cannebière">
-                    <figcaption>Auberge la Cannebière <br>
-                    Nuit à partir de 25€
+                    <figcaption>
+                        <div class="nom_hotel">
+                        Auberge la Cannebière
+                        </div>
+                        Nuit à partir de 25€
                 <div class="rating">
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -164,8 +176,11 @@
                 <a href="#">
                 <figure>
                 <img src="images/hebergements/Hebergements_Marseille_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Chambre de l'hôtel du port">
-                    <figcaption>Hôtel du port <br>
-                    Nuit à partir de 52€
+                    <figcaption>
+                        <div class="nom_hotel">
+                        Hôtel du port
+                        </div>
+                        Nuit à partir de 52€
                 <div class="rating">
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -184,8 +199,11 @@
                 <a href="#">
                 <figure>
                     <img src="images/hebergements/Hebergements_Marseille_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Chambre de l'hôtel Les mouettes">
-                    <figcaption>Hôtel Les mouettes <br>
-                    Nuit à partir de 76€
+                    <figcaption>
+                        <div class="nom_hotel">
+                        Hôtel Les mouettes
+                        </div>
+                        Nuit à partir de 76€
                 <div class="rating">
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -204,8 +222,11 @@
                 <a href="#">
                 <figure>
                     <img src="images/hebergements/Hebergements_Marseille_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt=" Chmabre de l'hôtel de la mer">
-                    <figcaption>Hôtel de la mer <br>
-                    Nuit à partir de 46€
+                    <figcaption>
+                        <div class="nom_hotel">
+                        Hôtel de la mer
+                        </div>
+                        Nuit à partir de 46€
                 <div class="rating">
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -224,8 +245,11 @@
                 <a href="#">
                 <figure>
                     <img src="images/hebergements/Hebergements_Marseille_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Chambre de l'Auberge Le Panier">
-                    <figcaption>Auberge Le Panier <br>
-                    Nuit à partir de 23€
+                    <figcaption>
+                        <div class="nom_hotel">
+                        Auberge Le Panier
+                        </div>
+                        Nuit à partir de 23€
                 <div class="rating">
                     <div class="stars">
                         <i class="fa fa-star"></i>
@@ -244,8 +268,11 @@
                 <a href="#">
                 <figure>
                     <img src="images/hebergements/Hebergements_Marseille_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Chambre de l'hôtel chez Amina">
-                    <figcaption>Hôtel chez Amina <br>
-                    Nuit à partir de 96€
+                    <figcaption>
+                        <div class="nom_hotel">
+                        Hôtel chez Amina 
+                        </div>
+                        Nuit à partir de 96€
                 <div class="rating">
                     <div class="stars">
                         <i class="fa fa-star"></i>
