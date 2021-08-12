@@ -35,9 +35,15 @@ section
     border-radius: 15px;
 }
 
-.nom_hotel
+.nom_hotel, .activites figcaption
 {
     font-weight: bold;
+    font-size: 80%;
+}
+
+.Prix
+{
+    font-size: 70%;
 }
 
 .logo
@@ -151,18 +157,36 @@ input
 
 }
 
-.populaires
+.location
 {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+
+}
+
+.populaires
+{
     width: 33%;
-    align-items: center;
+    margin-left: auto;
+}
+
+.Titre
+{
+    display: flex;
+    height: 100%;
+}
+
+.populaires h2
+{
+    font-size: 15px;
+    padding: 0px 20px 0px 20px;
+    text-align: start;
 }
 
 #chart-line
 {
-    text-align: right;
+    margin: 12.450px 0px 12.45px 0px;
+    margin-left: auto;
+    padding-right: 10px;
 }
 
 .carte_populaires
@@ -181,10 +205,12 @@ input
 
 .populaires img
 {
-    width: 50%;
+    width: 40%;
     height: 100%;
     border-radius: 10px 0px 0px 10px;
 }
+
+
 
 
 
