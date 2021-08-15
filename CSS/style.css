@@ -157,9 +157,10 @@ input
 
 }
 
-.location
+.Locations
 {
     display: flex;
+    flex-direction: row-reverse;
 
 }
 
@@ -176,11 +177,10 @@ input
     height: 100%;
 }
 
-.populaires h2
+h2
 {
     font-size: 15px;
     padding: 0px 20px 0px 20px;
-    text-align: start;
 }
 
 #chart-line
@@ -219,10 +219,52 @@ input
     border-radius: 10px 0px 0px 10px;
 }
 
-.populaires .stars
+.stars
 {
     color: #0065fc;
+    margin-top:20px
 }
+
+.hebergements
+{
+    width: 65%;
+    padding-bottom: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carte_hebergements
+{
+    background-color: white;
+    border-radius: 15px;
+    width: 40%;
+    height: 5%
+}
+
+.hebergements figure
+{
+    margin: 5px;
+}
+
+.hebergements img
+{
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
