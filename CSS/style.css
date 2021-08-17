@@ -39,6 +39,7 @@ section
 {
     font-weight: bold;
     font-size: 80%;
+    margin-bottom: 10px;
 }
 
 .Prix
@@ -62,7 +63,7 @@ nav ul
 header
 {
     display: flex;
-    justify-content: stretch;
+    justify-content: space-between;
 }
 
 .inscription
@@ -85,7 +86,6 @@ header nav li
 form
 {
     display: flex;
-    height: 35px;
 }
 
 #map_marker
@@ -97,7 +97,7 @@ form
 
 #loupe
 {
-    visibility: hidden;
+    display: none;
 }
 
 input
@@ -161,20 +161,22 @@ input
 {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
 
 }
 
 .populaires
 {
-    width: 33%;
-    margin-left: auto;
+    width: 24%;
+    margin-inline-start: auto;
     padding-bottom: 2px;
+    margin-left: 30px;
 }
 
 .Titre
 {
     display: flex;
-    height: 100%;
+    margin: 15px;
 }
 
 h2
@@ -194,9 +196,9 @@ h2
 {
     background-color: white;
     border-radius: 15px;
-    width: 90%;
-    height: 89px;
-    margin: 0px 15px 15px 15px;
+    margin: 10px 30px 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .populaires figure
@@ -204,6 +206,9 @@ h2
     display: flex;
     margin: 0px;
     padding: 5px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
 
 }
 
@@ -214,14 +219,15 @@ h2
 
 .populaires img
 {
-    width: 40%;
-    height: 80px;
+    width: 107px;
+    height: 105px;
     border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
 }
 
 .populaires .stars
 {
-  margin-top:20px  
+  margin-top: 35px;  
 }
 
 .stars
@@ -231,7 +237,7 @@ h2
 
 .hebergements
 {
-    width: 65%;
+    width: 60%;
     padding-bottom: 2px;
 }
 
@@ -239,22 +245,17 @@ h2
 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
-}
-
-.carte_populaires
-{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .carte_hebergements
 {
     background-color: white;
     border-radius: 15px;
-    width: 29%;
-    height: 5%;
-    margin: 10px;
+    width: 26%;
+    height: 160px;
+    margin: 15px;
 }
 
 .hebergements figure
@@ -265,8 +266,10 @@ h2
 .hebergements img
 {
     width: 100%;
-    height: 80px;
+    height: 90px;
     border-radius: 15px 15px 0px 0px;
+    object-fit: cover;
+    object-position: 0px -21px ;
 }
 
 .hebergements button
@@ -280,6 +283,12 @@ h2
 {
     padding-top: 10px;
 }
+
+.hebergements .stars
+{
+    margin-top: 5px;
+}
+
 
 
 
