@@ -64,6 +64,8 @@ header
 {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px;
 }
 
 .inscription
@@ -83,16 +85,22 @@ header nav li
     margin-left: 75px;
 }
 
+main
+{
+    margin: 0px 30px;
+}
+
 form
 {
     display: flex;
+    width: 30%;
 }
 
 #map_marker
 {
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
-    padding: 10px;
+    padding: 14px;
 }
 
 #loupe
@@ -106,6 +114,9 @@ input
     font-weight: bold;
     border-top: solid #f2f2f2 1px;
     border-bottom: solid #f2f2f2 1px;
+    width: 55%;
+    padding-left: 13px;
+    font-size: 14px;
 }
 
 .recherche button
@@ -116,6 +127,8 @@ input
     border: none;
     padding: 10px;
     height: 100%;
+    width: 35%;
+    font-size: 17px;
     
 }
 
@@ -125,6 +138,7 @@ input
     background-color: #deebff;
     border-radius: 30px;
     padding:10px;
+    margin-right: 15px;
 }
 
 .filtres button
@@ -134,8 +148,8 @@ input
     border-radius: 20px;
     border-color: #f2f2f2;
     margin-left: 15px;
-    padding: 0px;
-    padding-right: 10px;
+    padding: 0px 45px 0px 0px;
+    font-size: 14px;
 }
 
 .filtres p :hover
@@ -146,6 +160,8 @@ input
 .filtres
 {
     display: flex;
+    width: 70%;
+    align-items: center;
 }
 
 .info i
@@ -237,7 +253,7 @@ h2
 
 .hebergements
 {
-    width: 60%;
+    width: 70%;
     padding-bottom: 2px;
 }
 
@@ -253,8 +269,8 @@ h2
 {
     background-color: white;
     border-radius: 15px;
-    width: 26%;
-    height: 160px;
+    width: 29%;
+    height: 180px;
     margin: 15px;
 }
 
@@ -266,10 +282,10 @@ h2
 .hebergements img
 {
     width: 100%;
-    height: 90px;
+    height: 109px;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
-    object-position: 0px -21px ;
+    object-position: center;
 }
 
 .hebergements button
@@ -277,6 +293,8 @@ h2
     border: none;
     font-weight: bold;
     padding: 20px;
+    border-radius: 15px;
+    background-color: #f2f2f2
 }
 
 .hebergements h2
@@ -289,26 +307,129 @@ h2
     margin-top: 5px;
 }
 
+.activites
+{
+    display: grid;
+    grid-template-columns: 260px 60px 260px 60px 260px 60px 260px;
+    grid-template-rows: 40px 150px 30px 30px 150px 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
 
+.carte_activites
+{
+    box-shadow: 2px 2px 10px #f2f2f2;
+    border-radius: 15px;
+}
 
+.activites figure
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
 
+.carte_activites img
+{
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+    height: 122px;
+    object-fit: cover;
+}
 
+#vieux_port
+{
+    grid-column: 1/2;
+    grid-row: 2/6;
+}
 
+#fort_pomegues
+{
+    grid-column: 3/4;
+    grid-row: 2/4;
+}
 
+#ile_frioul
+{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
 
+#parc_national
+{
+    grid-column: 5/6;
+    grid-row: 2/6;
+}
 
+#notre_dame
+{
+    grid-column: 7/8;
+    grid-row: 2/3;
+}
 
+#parc_longchamps
+{
+    grid-column: 7/8;
+    grid-row: 4/6;
+}
 
+#vieux_port img
+{
+    height: 87%;
+}
 
+#fort_pomegues img
+{
+    height: 135px;
+}
 
+#ile_frioul img
+{
+    height: 100px;
+}
 
+#parc_national img
+{
+    height: 87%;
+}
 
+#notre_dame img
+{
+    height: 100px;
+}
 
+#parc_longchamps img
+{
+    height: 135px;
+}
 
-
+.activites figcaption
+{
+    margin: 10px;
+}
 
 footer
 {
     display: flex;
-    justify-content: space-between;
+}
+
+footer h3
+{
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+footer nav
+{
+margin-right: 214px;
+}
+
+footer nav ol
+{
+    font-size: 15px;
+}
+
+footer nav ol li
+{
+    margin-bottom: 10px;
 }
