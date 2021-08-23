@@ -5,7 +5,8 @@ body
 
 #bloc_page
 {
-    max-width: 1420px;
+    max-width: 1620px;
+    min-width: 992px;
     margin: auto;
 }
 
@@ -49,9 +50,7 @@ section
 
 .logo
 {
-    position: relative ;
-    max-width: 25%;
-    height: auto;
+    width: 25%;
 }
 
 nav ul
@@ -68,7 +67,7 @@ header
     margin: 0px 30px;
 }
 
-.inscription
+#inscription
 {
     font-weight: bold;
     color: #0065fc;
@@ -77,12 +76,13 @@ header
 header a:hover
 {
     color: #0065fc;
-    text-decoration: overline;
+    border-top: 2px solid;
+    padding-top: 38px;
 }
 
-header nav li
+header a
 {
-    margin-left: 75px;
+    padding: 32px;
 }
 
 main
@@ -178,6 +178,7 @@ input
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    margin-bottom: 35px;
 
 }
 
@@ -310,10 +311,12 @@ h2
 .activites
 {
     display: grid;
-    grid-template-columns: 260px 60px 260px 60px 260px 60px 260px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 40px 150px 30px 30px 150px 30px;
     margin-top: 30px;
-    justify-content: center;
+    grid-column-gap: 30px;
+    width: calc(99% - 30px);
+    margin: auto;
 }
 
 .carte_activites
@@ -345,31 +348,31 @@ h2
 
 #fort_pomegues
 {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 2/4;
 }
 
 #ile_frioul
 {
-    grid-column: 3/4;
+    grid-column: 2/3;
     grid-row: 5/6;
 }
 
 #parc_national
 {
-    grid-column: 5/6;
+    grid-column: 3/4;
     grid-row: 2/6;
 }
 
 #notre_dame
 {
-    grid-column: 7/8;
+    grid-column: 4/5;
     grid-row: 2/3;
 }
 
 #parc_longchamps
 {
-    grid-column: 7/8;
+    grid-column: 4/5;
     grid-row: 4/6;
 }
 
@@ -432,4 +435,35 @@ footer nav ol
 footer nav ol li
 {
     margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 991px)
+{
+    #bloc_page
+    {
+        min-width: 600px;
+        width: auto;
+    }
+
+    .logo
+    {
+        width: 50%;
+    }
+
+    header nav ul 
+    {
+        flex-wrap: wrap-reverse;
+        padding: 0px;
+    }
+
+    #inscription
+    {
+        font-size: 25px;
+    }
+
+    #hebergements, #activites
+    {
+        font-weight: normal;
+        padding: 20px;
+    }
 }
