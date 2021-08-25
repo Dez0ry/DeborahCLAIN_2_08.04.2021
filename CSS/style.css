@@ -106,6 +106,7 @@ form
 #loupe
 {
     display: none;
+
 }
 
 input
@@ -465,5 +466,61 @@ footer nav ol li
     {
         font-weight: normal;
         padding: 20px;
+    }
+
+    main 
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .top h1 
+    {
+        font-size: 40px;
+    }
+
+    .top p 
+    {
+        font-size: 30px;
+    }
+
+    form 
+    {
+        width: 100%;
+
+    }
+
+    .filtres
+    {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    .info
+    {
+        font-size: 30px;
+    }
+
+    .Locations
+    {
+        flex-direction: column;
+    }
+
+    .populaires
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    .Titre h2
+    {
+        font-size: 40px;
+    }
+
+    #chart-line
+    {
+        font-size: 40px;
+        margin-top: 33.200px;
     }
 }
