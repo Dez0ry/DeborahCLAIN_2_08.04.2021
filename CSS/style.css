@@ -92,11 +92,6 @@ header a
     padding: 32px;
 }
 
-main
-{
-    margin: 0px 30px;
-}
-
 form
 {
     display: flex;
@@ -146,7 +141,7 @@ input
     background-color: #deebff;
     border-radius: 30px;
     padding:10px;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .filtres button
@@ -156,7 +151,7 @@ input
     border-radius: 20px;
     border-color: #f2f2f2;
     margin-left: 15px;
-    padding: 0px 45px 0px 0px;
+    padding: 0px 10px 0px 0px;
     font-size: 14px;
 }
 
@@ -278,7 +273,6 @@ h2
     background-color: white;
     border-radius: 15px;
     width: 29%;
-    height: 180px;
     margin: 15px;
 }
 
@@ -456,6 +450,12 @@ footer nav ol li
     {
         flex-direction: column;
         position: relative;
+        align-items: self-start;
+    }
+
+    .logo
+    {
+        padding-left: 30px;
     }
 
     header nav
@@ -474,7 +474,7 @@ footer nav ol li
     {
         position: absolute;
         top: 0;
-        right: 0;
+        right: 17px;
         margin-top: 35px;
     }
 
@@ -514,6 +514,11 @@ footer nav ol li
         margin: auto;
     }
 
+    .top
+    {
+        padding-top: 30px;
+    }
+
     .top h1 
     {
         font-size: 22px;
@@ -525,7 +530,8 @@ footer nav ol li
     .top p 
     {
         font-size: 15px;
-        width: 100%;
+        padding-left: 35px;
+        margin-bottom: 30px;
     }
 
     form 
@@ -572,17 +578,20 @@ footer nav ol li
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        margin-top: 30px;
     }
 
     .filtres p 
     {
-        width: 100%;
         margin-top: 0px;
+        padding-left: 20px;
     }
 
     .filtres h3
     {
         font-size: 19px;
+        margin: 0;
+        padding-left: 35px;
     }
 
     .filtres button 
@@ -641,6 +650,8 @@ footer nav ol li
     {
         display: flex;
         align-items: flex-start;
+        padding-left: 20px;
+        margin-bottom: 30px;
     }
 
     section 
@@ -683,13 +694,14 @@ footer nav ol li
 
     .populaires img 
     {
-        width: 40%;
+        width: 60%;
         height: 100%;
     }
 
     .populaires figcaption
     {
-        width: 60%;
+        width: 40%;
+        padding-top: 30px;
     }
 
     .hebergements
@@ -705,7 +717,6 @@ footer nav ol li
     .carte_hebergements
     {
         width: 90%;
-        height: 330px;
         box-shadow: 2px 2px 10px #f2f2f2;
         border-radius: 15px;
     }
@@ -755,7 +766,7 @@ footer nav ol li
     .carte_activites
     {
         width: 90%;
-        height: 330px;
+        height: 295px;
         margin: auto;
         margin-top: 30px;
     }
@@ -763,7 +774,7 @@ footer nav ol li
     .activites figcaption
     {
         font-size: 15px;
-        padding: 18px;
+        margin: 16px;
     }
 
     #vieux_port img, #fort_pomegues img, #ile_frioul img, #parc_national img, #notre_dame img, #parc_longchamps img
@@ -785,11 +796,19 @@ footer nav ol li
     footer nav 
     {
         margin-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+
     }
 
-    footer li 
+    footer nav li 
     {
         font-size: 15px;
+    }
+
+    footer nav ol 
+    {
+        padding: 0px;
     }
 }
 
@@ -817,12 +836,22 @@ footer nav ol li
             height: 146px;
         }
 
-        .carte_hebergements
+        .populaires img 
         {
-            height: 230px;
+            width: 40%;
         }
 
-        
+        .populaires figcaption 
+        {
+            width: 60%;
+            padding-top : 10px;
+        }
+
+        .populaires .stars
+        {
+            margin-top: 52px;
+        }
+
         .hebergements img 
         {
             height: 109px;
@@ -845,8 +874,8 @@ footer nav ol li
 
         footer nav
         {
-           margin: 0; 
-           width: 100%;
+           margin: 0;
+           padding: 30px 0px 0px 20px; 
         }
 
         footer ol 
