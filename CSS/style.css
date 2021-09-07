@@ -895,7 +895,7 @@ footer nav ol li
         }
     }
 
-    @media only screen and (min-width:  700px)
+    @media only screen and (min-width:  700px) and (max-widht: 991px)
     {
         .carte_populaires, .carte_hebergements, .carte_activites
         {
