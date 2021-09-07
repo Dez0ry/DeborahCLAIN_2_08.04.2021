@@ -197,6 +197,7 @@ input
 {
     display: flex;
     margin: 15px;
+    align-items: center;
 }
 
 h2
@@ -206,7 +207,6 @@ h2
 
 #chart-line
 {
-    margin: 12.450px 0px 12.45px 0px;
     margin-left: auto;
     padding-right: 10px;
 }
@@ -466,8 +466,7 @@ footer nav ol li
     header nav ul 
     {
         width: 100%;
-        border-bottom: solid 5px #f2f2f2;
-        padding: 15px 0px 15px 0px;
+        padding: 0;
     }
 
     #inscription
@@ -489,21 +488,28 @@ footer nav ol li
     {
         
         font-size: 15px;
-        padding: 0;
+    }
+
+    .border_mobile
+    {
+        border-bottom: 5px solid;
+        padding-bottom: 15px;
+        color: #f2f2f2;
+    }
+
+    .border_mobile:hover
+    {
+        color: #0065fc;
     }
 
     a#ancre_hebergements:hover
     {
-        border-bottom: 5px solid;
-        padding-bottom: 15px;
         border-top: none;
         padding-top: 0px;   
     }
 
     a#ancre_activites:hover
     {
-        border-bottom: 5px solid;
-        padding-bottom: 15px;
         border-top: none;
         padding-top: 0px;    
     }
@@ -678,7 +684,6 @@ footer nav ol li
     #chart-line
     {
         font-size: 20px;
-        margin-top: 16.6px;
     }
 
     .carte_populaires
@@ -756,6 +761,7 @@ footer nav ol li
     {
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .activites h2 
@@ -857,6 +863,11 @@ footer nav ol li
             height: 109px;
         }
 
+        .nom_hotel
+        {
+            font-size: 100%;
+        }
+
         .carte_activites
         {
             height: 190px;
@@ -882,4 +893,41 @@ footer nav ol li
         {
             padding:0;
         }
+    }
+
+    @media only screen and (min-width:  700px)
+    {
+        .carte_populaires, .carte_hebergements, .carte_activites
+        {
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        h2 
+        {
+            text-align: center;
+        }
+
+        .Titre
+        {
+            justify-content: center;
+        }
+
+        #chart-line
+        {
+            margin-left: 10px;
+        }
+
+        footer 
+        {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        footer nav 
+        {
+            margin: 0;
+        }
+
     }
