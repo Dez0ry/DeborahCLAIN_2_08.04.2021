@@ -234,19 +234,16 @@ h2
 .populaires figcaption
 {
     padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .populaires img
 {
     width: 107px;
-    height: 113px;
     border-radius: 10px 0px 0px 10px;
     object-fit: cover;
-}
-
-.populaires .stars
-{
-  margin-top: 35px;  
 }
 
 .stars
@@ -700,13 +697,11 @@ footer nav ol li
     .populaires img 
     {
         width: 60%;
-        height: 100%;
     }
 
     .populaires figcaption
     {
         width: 40%;
-        padding-top: 30px;
     }
 
     .hebergements
@@ -839,7 +834,7 @@ footer nav ol li
 
         .carte_populaires
         {
-            height: 146px;
+            height: 100%;
         }
 
         .populaires img 
@@ -850,17 +845,6 @@ footer nav ol li
         .populaires figcaption 
         {
             width: 60%;
-            padding-top : 10px;
-        }
-
-        .populaires .stars
-        {
-            margin-top: 52px;
-        }
-
-        .hebergements img 
-        {
-            height: 109px;
         }
 
         .nom_hotel
@@ -895,7 +879,7 @@ footer nav ol li
         }
     }
 
-    @media only screen and (min-width:  700px) and (max-widht: 991px)
+    @media only screen and (min-width:  700px) and (max-width: 991px)
     {
         .carte_populaires, .carte_hebergements, .carte_activites
         {
@@ -917,6 +901,11 @@ footer nav ol li
         #chart-line
         {
             margin-left: 10px;
+        }
+
+        .populaires figure 
+        {
+            height: 100%;
         }
 
         footer 
