@@ -422,7 +422,9 @@ footer h3
 
 footer nav
 {
-margin-right: 214px;
+    margin-right: 145px;
+    padding-top: 20px;
+    padding-bottom: 20px
 }
 
 footer nav ol
